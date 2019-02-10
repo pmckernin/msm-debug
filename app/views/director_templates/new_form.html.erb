@@ -11,7 +11,7 @@
       Dob
     </label>
 
-    <input type="text" id="dob" name="dob" class="form-control" value="<%= @director.dob %>">
+    <input type="text" id="dob" name="dob" class="form-control">
   </div>
 
   <!-- Label and input for name -->
@@ -20,7 +20,7 @@
       Name
     </label>
 
-    <input type="text" id="name" name="name" class="form-control" value="<%= @director.name %>">
+    <input type="text" id="name" name="name" class="form-control">
   </div>
 
   <!-- Label and input for bio -->
@@ -29,7 +29,7 @@
       Bio
     </label>
 
-    <textarea id="bio" name="bio" class="form-control" rows="3"><%= @director.bio %></textarea>
+    <textarea id="bio" name="bio" class="form-control" rows="3"></textarea>
   </div>
 
   <!-- Label and input for image_url -->
@@ -38,14 +38,13 @@
       Image url
     </label>
 
-    <input type="text" id="image_url" name="image_url" class="form-control" value="<%= @director.image_url %>">
+    <input type="text" id="image_url" name="image_url" class="form-control">
   </div>
 
   <button class="btn btn-block btn-outline-secondary">
     Create director
   </button>
 </form>
-
 <hr>
 
 <a href="/directors">
