@@ -184,7 +184,7 @@ feature "ACTORS" do
   end
 
   describe "/actors/new" do
-    it "redirects to the details page with a notice", points: 3, hint: h("copy_must_match") do
+    it "displays a notice upon redirect", points: 3, hint: h("copy_must_match") do
       visit "/actors"
 
       expect(page).to_not have_content("Actor created successfully.")
@@ -232,7 +232,7 @@ feature "ACTORS" do
   end
 
   describe "/delete_actor/[ACTOR ID]" do
-    it "redirects to the index with a notice", points: 3, hint: h("copy_must_match") do
+    it "displays a notice upon redirect", points: 3, hint: h("copy_must_match") do
       actor_to_delete = create(:actor)
 
       visit "/actors"
@@ -397,7 +397,7 @@ feature "ACTORS" do
   end
 
   describe "/actors/[ACTOR ID]/edit" do
-    it "redirects to the details page with a notice", points: 3, hint: h("copy_must_match") do
+    it "displays a notice upon redirect", points: 3, hint: h("copy_must_match") do
       actor_to_edit = create(:actor)
 
       visit "/actors"
